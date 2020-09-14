@@ -33,14 +33,3 @@ This document/site is primarly written for the following:
 * Business Application stakeholders
 * Operational & SRE Teams
 * DevOps & NetOps leads
-
-.. toctree::
-    :maxdepth: 2
-    :numbered:
-    :titlesonly:
-    :glob:
-    :hidden:
-
-   customer.rst
-   onprem/*
-   aws/*
