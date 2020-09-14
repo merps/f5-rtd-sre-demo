@@ -3,7 +3,7 @@ Customer MeBeFake
 
 Customer Profile
 ------------------------------------------------------------------
-A random name for a random organisation and ABC Co. is *truly* overused, this example customer 
+A random name for a random organisation and ABC Co. is **truly** overused, this example customer 
 operates in the Large SMB market that has an Public Internet precense for online training and marketting.
 
 It is estatimated that MeBeFake has over 500 staff and are looking to begin their multi-cloud journey
@@ -12,19 +12,19 @@ with a three (3) year plan of to have sixty (60) percent of workloads bursting t
 
 Customer Objectives
 ------------------------------------------------------------------
-In a galaxy far, far, away someone had a _terrible_ idea of creating a php application called
+In a galaxy far, far, away someone had a *terrible* idea of creating a php application called
 Customer Portal Application (CAP - yes, I am a sadist).   Customer MeBeFake (MBF) currently hosts
-_'ne1MBF, CAP'_, Customer Portal Application, on-premises an the primary objects of this solution is 
+***'ne1MBF, CAP'***, Customer Portal Application, on-premises an the primary objects of this solution is 
 to:
 
 1) Provision Infrastucture as Code (IaC) for CSP's
 2) Provide Integration of a CloudAgnostic SRE solution
-3) Reduce 'tool-sprawl', Infrastucture and management overheads through manual processes
+3) Reduce *'tool-sprawl'*, Infrastucture and management overheads through manual processes.
 
 
 Scope of Services
 ------------------------------------------------------------------
-MeBeFake has nominated the on-premises application _'ne1MBF'_ as the Lighthouse application for the 
+MeBeFake has nominated the on-premises application *'ne1MBF'* as the Lighthouse application for the 
 operational theoretical exercise as per previously listed objectives.
 
 As such this document/site will be divided into two (2) distinct sections;
@@ -38,5 +38,3 @@ As such this document/site will be divided into two (2) distinct sections;
     a) Production environment for hosting public facing workloads
     b) Shared Services for hosting/deploying applications
     c) NonProduction environments for Development/Testing
-    d)
-
