@@ -13,7 +13,7 @@ with a three (3) year plan of to have sixty (60) percent of workloads bursting t
 Customer Objectives
 ------------------------------------------------------------------
 In a galaxy far, far, away someone had a *terrible* idea of creating a php application called
-Customer Portal Application (CAP - *yes, I am a sadist*).   Customer MeBeFake (MBF) currently hosts
+Customer Application Portal (CAP - *yes, I am a sadist*).   Customer MeBeFake (MBF) currently hosts
 **'ne1MBF, CAP'**, Customer Portal Application, on-premises an the primary objects of this solution is 
 to:
 
@@ -34,7 +34,42 @@ As such this document/site will be divided into two (2) distinct sections;
     b) Production Automation (IaC & CI/CD flows) of Lighthouse Application Stack
     c) SRE Solution Integration of On-premises
 
-2) MeBeFake AWS Deployment
+2) AWS Deployment (CSP)
     a) Production environment for hosting public facing workloads
     b) Shared Services for hosting/deploying applications
     c) NonProduction environments for Development/Testing
+    d) Management & Audit (SecOps) environment
+    e) Production Automation extension from on-premises to CSP
+    f) SRE Solution integration extension.
+
+
+Scope of Exclusion
+------------------------------------------------------------------
+
+The following items are out-of-scope for SRE Observibility deployment:
+
+1) Coffee, *there just isn't enough to go around*
+2) Implimentation of CAP and supporting SSO/2FA integration
+3) Implimentation of, yeah, something for later I guess.
+
+
+Assuptions
+------------------------------------------------------------------
+
+The following assuptions have been made during the implimentation of the Lighthouse Application 
+- *'ne1MBF'* - for this SRE Observibility project:
+
+* the reader, yes - you, has an understanding of the following:
+    a) Linux - SysOp experience
+    b) Automation;
+        1) Terraform
+        2) AWS CLi
+        3) GitLab/GitHub (CI/CD)
+        4) Scripting languages
+        5) Docker
+    c) Network, specificlly F5/NGINX
+    d) Monitoring;
+        1) syslog-ng
+        2) telegraf & influxdb
+        3) telemetry streaming 
+    e) *ability to rtfm*
