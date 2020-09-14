@@ -1,4 +1,4 @@
-Site Reliabitly Engineering (SRE) Demo (WIP)
+Site Reliability Engineering (SRE) Demo (WIP)
 ==================================================================
 
 This document describes the use of F5 Networks SaaS service, Beacon, along with other products from
@@ -8,7 +8,7 @@ Governance.
 This document was created as part demonstration platform design and build.  The contents of the 
 document consists of architecture references and detailed instructions on how to replicate.
 
-Site Reliabitly Engineering (SRE) platform consists of multiple Cloud Service Provide (CSP)
+Site Reliability Engineering (SRE) platform consists of multiple Cloud Service Provide (CSP)
 deployments alongside a replication of a privately hosted Data Center (DC) environment.
 
 The demonstration spans across mutliple regions and availablity zones of CSP's and a singular DC 
@@ -17,3 +17,9 @@ PublicHybrid deployment model.
 
 This is a holding page for code here:
 https://github.com/merps/f5devops/tree/f5-sre-demo/terraform/f5-sre-demo
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 4
+   :caption: Contents:
+   :glob:
