@@ -34,4 +34,9 @@ As such this document/site will be divided into two (2) distinct sections;
     b) Production Automation (IaC & CI/CD flows) of Lighthouse Application Stack
     c) SRE Solution Integration of On-premises
 
-2) MeBeFake AWS Depoyment
+2) MeBeFake AWS Deployment
+    a) Production environment for hosting public facing workloads
+    b) Shared Services for hosting/deploying applications
+    c) NonProduction environments for Development/Testing
+    d)
+
