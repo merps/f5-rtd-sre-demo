@@ -53,13 +53,14 @@ The following items are out-of-scope for SRE Observibility deployment:
 3) Implimentation of, yeah, something for later I guess.
 
 
-Assuptions
+Assumptions
 ------------------------------------------------------------------
 
 The following assuptions have been made during the implimentation of the Lighthouse Application 
 - *'ne1MBF'* - for this SRE Observibility project:
 
 * the reader, yes - you, has an understanding of the following:
+
     a) Linux - SysOp experience
     b) Automation;
         1) Terraform
@@ -72,4 +73,5 @@ The following assuptions have been made during the implimentation of the Lightho
         1) syslog-ng
         2) telegraf & influxdb
         3) telemetry streaming 
-    e) *ability to rtfm*
+        
+* *ability to rtfm*
