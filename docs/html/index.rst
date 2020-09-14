@@ -12,7 +12,7 @@ Site Reliability Engineering (SRE) platform consists of multiple Cloud Service P
 deployments alongside a replication of a privately hosted Data Center (DC) environment.
 
 The demonstration spans across mutliple regions and availablity zones of CSP's and a singular DC 
-environment to imiate an Application's - Customer Portal (WordPress) - journeyfrom OnPremises to 
+environment to imiate an Application's - Customer Portal (WordPress) - journey from OnPremises to 
 PublicHybrid deployment model.
 
 This is a holding page for code here:
@@ -20,6 +20,11 @@ https://github.com/merps/f5devops/tree/f5-sre-demo/terraform/f5-sre-demo
 
 .. toctree::
    :titlesonly:
-   :maxdepth: 4
+   :maxdepth: 2
    :caption: Contents:
    :glob:
+
+   about
+   customer
+   onprem/*
+   aws/*
