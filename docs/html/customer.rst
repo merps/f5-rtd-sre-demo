@@ -13,12 +13,12 @@ with a three (3) year plan of to have sixty (60) percent of workloads bursting t
 Customer Objectives
 ------------------------------------------------------------------
 In a galaxy far, far, away someone had a *terrible* idea of creating a php application called
-Customer Portal Application (CAP - yes, I am a sadist).   Customer MeBeFake (MBF) currently hosts
-***'ne1MBF, CAP'***, Customer Portal Application, on-premises an the primary objects of this solution is 
+Customer Portal Application (CAP - *yes, I am a sadist*).   Customer MeBeFake (MBF) currently hosts
+**'ne1MBF, CAP'**, Customer Portal Application, on-premises an the primary objects of this solution is 
 to:
 
 1) Provision Infrastucture as Code (IaC) for CSP's
-2) Provide Integration of a CloudAgnostic SRE solution
+2) Provide Integration of a Cloud Agnostic SaaS SRE solution
 3) Reduce *'tool-sprawl'*, Infrastucture and management overheads through manual processes.
 
 
