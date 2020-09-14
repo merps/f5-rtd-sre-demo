@@ -26,6 +26,7 @@ found and this will also be provided within the References section of this docum
 Intended Audience
 ------------------------------------------------------------------
 This document/site is primarly written for the following:
+
 * Architects
     * Enterprise
     * Security
