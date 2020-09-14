@@ -17,3 +17,15 @@ PublicHybrid deployment model.
 
 This is a holding page for code here:
 https://github.com/merps/f5devops/tree/f5-sre-demo/terraform/f5-sre-demo
+
+
+.. toctree::
+   :maxdepth: 4
+   :glob:
+
+   html/about.rst
+   html/cusomer.rst
+   onprem/*
+   aws/*
+   images/* 
+   examples/*
