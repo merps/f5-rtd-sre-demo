@@ -1,4 +1,4 @@
-Site Reliability Engineering (SRE) Demo (WIP)
+Site Reliability Engineering (SRE) Demo
 ==================================================================
 
 This document describes the use of F5 Networks SaaS service, Beacon, along with other products from
