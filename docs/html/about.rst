@@ -35,7 +35,12 @@ This document/site is primarly written for the following:
 * DevOps & NetOps leads
 
 .. toctree::
-   :titlesonly:
-   :maxdepth: 4
-   :caption: Contents:
-   :glob:
+    :maxdepth: 2
+    :numbered:
+    :titlesonly:
+    :glob:
+    :hidden:
+
+   customer.rst
+   onprem/*
+   aws/*

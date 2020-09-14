@@ -19,12 +19,13 @@ This is a holding page for code here:
 https://github.com/merps/f5devops/tree/f5-sre-demo/terraform/f5-sre-demo
 
 .. toctree::
-   :titlesonly:
-   :maxdepth: 2
-   :caption: Contents:
-   :glob:
+    :maxdepth: 2
+    :numbered:
+    :titlesonly:
+    :glob:
+    :hidden:
 
-   about
-   customer
+   about.rst
+   customer.rst
    onprem/*
    aws/*
