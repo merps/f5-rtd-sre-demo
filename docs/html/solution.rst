@@ -1,4 +1,4 @@
-Solution Description
+Solution Overview
 ------------------------------------------------------------------
 
 MeBeFake has currently has hosted infrastructure and application stacks in CoLo Data Centres at IBM
@@ -6,7 +6,7 @@ Cumberland and FujiXerox Macquarie Park that is approaching capacity.  SRE Obser
 current infrastructure and the expansion to Amazon Web Services will address the immediate resource 
 constraints.
 
-Overview
+Solution Platform
 =================================================================
 
 The solution is a Self-Managed platform currently established On-premises using a mix of physical 
@@ -18,11 +18,14 @@ this allows MeBeFake to have full control of the application stack providing bes
 the solution.
 
 The SRE Managed On-premsise and AWS Platform provides infrastructure in a customisable multi-cloud 
-environment using:
+environments.
 
 
 On-premise Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MeBeFake environments consist will be a mix of the following covered in the scope of this solution:
+
     * VMware vRealize Operations Cloud
     * VMware vSphere 6.7 
     * NetApp FAS Storage Arrays
@@ -30,7 +33,11 @@ On-premise Environment
 
 
 AWS CSP Environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+
+MeBeFake Cloud environments consist will be a mix of the following covered in the scope of this 
+or solution:
+
     * Amazon Virtual Private Cloud (VPC) for virtual networks
     * Amazon Elastic Cloud Compute (EC2) for virtual machines
     * Amazon Elastic Block Storage (EBS) for block storage
@@ -40,6 +47,10 @@ AWS CSP Environment
 
 F5aaS CloudServices (SaaS)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MeBeFake will leverage the following SaaS offerings to extend both On-premises and AWS Cloud 
+environments;
+
     * Beacon
     * Essentials App Protect (EAP)
     * DNS Services (DNS)
