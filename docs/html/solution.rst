@@ -94,6 +94,3 @@ Systems that are outside of MeBeFake's SRE project scope are the following OnPre
     * SAP HR
     * SharePoint
     * Windows Infrastructure
-
-
-
