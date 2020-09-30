@@ -32,6 +32,7 @@ https://github.com/merps/f5devops/tree/f5-sre-demo/terraform/f5-sre-demo
    html/about
    html/customer
    html/solution
+   html/systems
    onprem/*
    aws/*
    images/* 

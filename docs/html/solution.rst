@@ -71,9 +71,7 @@ The solution includes a fully managed service consisting of:
     * Incident Management
     * Configuration Management
     * Patch Management
-    * Anti-Virus Management
     * Monitoring
     * Auditing and Logging
     * Management of AWS Security Groups
     * Backup as a Service
-    * Customer Help Desk
