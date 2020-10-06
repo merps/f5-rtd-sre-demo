@@ -1,4 +1,4 @@
-AWS CSP Environment
+AWS Environment
 ------------------------------------------------------------------
 
 
@@ -11,7 +11,7 @@ interconnects (using AWS TransitGateway) to IBM Cumberland and FujiXerox Macquar
 
 
 VPCs
-==================================================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 AWS Virtual Private Cloud (VPC) is an isolated virtual network in AWS. This virtual network
 enables MeBeFake to manage the resources allocation inside the established VPCs including
@@ -24,24 +24,24 @@ into.
 
 The VPC structure is outlined as follows:
 
-=============   ==================================================  =============
-VPC Name        Description                                         TransitGateway
-                                                                    Interconnect
-=============   ==================================================  =============
-Production      A VPC containing the Visy production and UAT        Yes
-(PRD)           environments
-
-Development     A VPC containing MeBeFake's development and test    Yes
-(DEV)           environments
-
-Shared Services A VPC containing MeBeFake’s SRE shared services     Yes
-(SHARE)         that hosts MeBeFake’s CI/CD framework and other
-                services such as ActiveDirectory
-
-Security        A VPC that is used for SRE Management and Audit     No
-Operations      Operational Services. This VPC also provides
-(SecOps)        centralised management services.
-=============   ==================================================  =============
++---------------+----------------------------------------------------+---------------+
+|VPC Name       |Description                                         |TransitGateway |
+|               |                                                    |Interconnect   |
++===============+====================================================+===============+
+|Production     |A VPC containing the Visy production and UAT        |Yes            |
+|(PRD)          |environments                                        |               |
++---------------+----------------------------------------------------+---------------+
+|Development    |A VPC containing MeBeFake's development and test    |Yes            |
+|(DEV)          |environments                                        |               |
++---------------+----------------------------------------------------+---------------+
+|Shared Services|A VPC containing MeBeFake’s SRE shared services     |Yes            |
+|(SHARE)        |that hosts MeBeFake’s CI/CD framework and other     |               |
+|               |services such as ActiveDirectory                    |               |
++---------------+----------------------------------------------------+---------------+
+|Security       |A VPC that is used for SRE Management and Audit     |No             |
+|Operations     |Operational Services. This VPC also provides        |               |
+|(SecOps)       |centralised management services.                    |               |
++---------------+----------------------------------------------------+---------------+
 
 
 An AWS Virtual Private Cloud (VPC) allows an isolated virtual network created in AWS. The
@@ -67,7 +67,7 @@ Managed AWS Platform.
 
 
 Subnets
-==================================================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following section defines the overall subnets placement for MeBeFake’s SRE Managed AWS cloud
 platform. Subnets design is key to MeBeFake AWS implementation as it sets a foundation for MeBeFake’s
@@ -78,31 +78,31 @@ Further to this, MeBeFake is establishing a pattern for each VPC to simplify ove
 ensure consistency and aid repeatability. Three logical tiers are proposed: public, private and
 protected as follows:
 
-=============   ==================================================
-Tier            Description
-=============   ==================================================
-Public tier     The Public tier will include Public subnets. This subnet type is targeted for
-                instances that support inbound connections from the internet through an AWS
-                Internet Gateway (for example, Web Application Firewall (WAF) servers). For MeBeFake, 
-                Public subnets have been provisioned in anticipation that internet facing workloads 
-                will be deployed to these subnets in the future
-
-Private tier    The Private tier will include Private subnets. This subnet type is targeted for
-                internal web servers and application servers that have private IP addresses.  
-                Instances in a Private subnet will not support inbound internet connections.
-
-Protected tier  Instances in a Private subnet are accessible to MeBeFake on-premise networks.  
-                The Protected tier will include Protected subnets. This subnet type is designated 
-                for EC2 instances with database(s) and can only be accessed by servers in the 
-                Private tier.
-=============   ==================================================
++---------------+-------------------------------------------------------------------------------+
+|Tier           |Description                                                                    |
++===============+===============================================================================+
+|Public tier    |The Public tier will include Public subnets. This subnet type is targeted for  |
+|               |instances that support inbound connections from the internet through an AWS    |
+|               |Internet Gateway (for example, Web Application Firewall (WAF) servers).        | 
+|               |Public subnets have been provisioned in anticipation that internet facing      | 
+|               |workloads will be deployed to these subnets in the future                      |
++---------------+-------------------------------------------------------------------------------+
+|Private tier   |The Private tier will include Private subnets. This subnet type is targeted for|
+|               |internal web servers and application servers that have private IP addresses.   |  
+|               |Instances in a Private subnet will not support inbound internet connections.   |
++---------------+-------------------------------------------------------------------------------+
+|Protected tier |Instances in a Private subnet are accessible to MeBeFake on-premise networks.  |
+|               |The Protected tier will include Protected subnets. This subnet type is         | 
+|               |designated for EC2 instances with database(s) and can only be accessed by      | 
+|               |servers in the Private tier.                                                   |
++---------------+-------------------------------------------------------------------------------+
 
 **For detailed Network Subnet definitions please refer to the Network Subnets tab in the *ne1MBF*
 Data spreadsheet.**
 
 
 ACL's
-==================================================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Network access control lists (ACL), are an optional layer of security within the VPC layer. They are
 stateless (return traffic must be allowed by rules) firewalls for controlling traffic entering and 
@@ -112,7 +112,7 @@ default allow settings.
 
 
 Security Groups
-==================================================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Security groups are a stateful firewall used to control traffic entering or leaving an instance or
 groups of instances. Outbound traffic for all EC2 instances will be allowed out without filtering,
