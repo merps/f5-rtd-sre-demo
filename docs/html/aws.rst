@@ -24,7 +24,24 @@ into.
 
 The VPC structure is outlined as follows:
 
-(table) 
+=============   ==================================================  =============
+VPC Name        Description                                         TransitGateway
+                                                                    Interconnect
+=============   ==================================================  =============
+Production      A VPC containing the Visy production and UAT        Yes
+(PRD)           environments
+
+Development     A VPC containing MeBeFake's development and test    Yes
+(DEV)           environments
+
+Shared Services A VPC containing MeBeFake’s SRE shared services     Yes
+(SHARE)         that hosts MeBeFake’s CI/CD framework and other
+                services such as ActiveDirectory
+
+Security        A VPC that is used for SRE Management and Audit     No
+Operations      Operational Services. This VPC also provides
+(SecOps)        centralised management services.
+=============   ==================================================  =============
 
 
 An AWS Virtual Private Cloud (VPC) allows an isolated virtual network created in AWS. The
@@ -49,7 +66,7 @@ Further to this, MeBeFake is establishing a pattern for each VPC to simplify ove
 ensure consistency and aid repeatability. Three logical tiers are proposed: public, private and
 protected as follows:
 
--------------   --------------------------------------------------
+=============   ==================================================
 Tier            Description
 =============   ==================================================
 Public tier     The Public tier will include Public subnets. This subnet type is targeted for
@@ -74,36 +91,33 @@ ACL's
 
 Network access control lists (ACL), are an optional layer of security within the VPC layer. They are
 stateless (return traffic must be allowed by rules) firewalls for controlling traffic entering and 
-leaving the subnets. Security Groups provide much better security controls at a more granular level with
-better debug capabilities than Network ACLs and therefore ACLs will not be used beyond the
+leaving the subnets. Security Groups provide much better security controls at a more granular level 
+with better debug capabilities than Network ACLs and therefore ACLs will not be used beyond the
 default allow settings.
 
 
-SecurityGroups
+Security Groups
 ==================================================================
 
 Security groups are a stateful firewall used to control traffic entering or leaving an instance or
 groups of instances. Outbound traffic for all EC2 instances will be allowed out without filtering,
 however for Inbound traffic connections will be restricted to improve instance security
 
-MeBeFake Security Group Standards
-
+**MeBeFake Security Group Standards**
     * Instances will generally belong to the following security groups:
-
         - Default security group (per tier) or a workload specific security group
         - Management security group – allows incoming traffic for management/shared services
-
     * Default security groups are as follows:
-
         - Private Default security group – allows/filters incoming traffic from the Public
         - Default security group, allows/filters incoming traffic from on-premise networks
         - Protected Default security group – allows/filters incoming traffic from the Private 
-        security group
+          security group
         - Within a default security group instances allow incoming traffic from all other
-        instances in the same security group
+          instances in the same security group
+
 
 Through SRE Service Requests custom security groups can be created and updates to existing
 security groups can be made.
 
-For detailed Network Security Groups definitions please refer to the Security Groups tab in
-the ne1MBF Data spreadsheet.
+**For detailed Network Security Groups definitions please refer to the Security Groups tab in
+the *ne1MBF* Data spreadsheet.**
