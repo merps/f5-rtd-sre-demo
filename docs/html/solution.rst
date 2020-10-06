@@ -21,17 +21,6 @@ The SRE Managed On-premsise and AWS Platform provides infrastructure in a custom
 environments.
 
 
-On-premise Environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-MeBeFake environments consist will be a mix of the following covered in the scope of this solution:
-
-    * VMware vRealize Operations Cloud
-    * VMware vSphere 6.7 
-    * NetApp FAS Storage Arrays
-    * F5 & Ubiquiti network appliances 
-
-
 AWS CSP Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
 
@@ -43,6 +32,17 @@ or solution:
     * Amazon Elastic Block Storage (EBS) for block storage
     * Amazon Simple Storage Service (S3) for object storage
     * F5 BIGIP & NGINX for ADC & Security services.
+
+
+On-premise Environment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MeBeFake environments consist will be a mix of the following covered in the scope of this solution:
+
+    * VMware vRealize Operations Cloud
+    * VMware vSphere 6.7 
+    * NetApp FAS Storage Arrays
+    * F5 & Ubiquiti network appliances 
 
 
 F5aaS CloudServices (SaaS)
