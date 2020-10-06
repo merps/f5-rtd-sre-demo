@@ -53,17 +53,17 @@ private and protected subnets.
 The following table highlights the network allocation for each VPC in-scope for the MeBeFake SRE-
 Managed AWS Platform.
 
-============= ============= ============= ============= =============
-Region        VPC           Network       CIDR Mask     Usable IP's
-============= ============= ============= ============= =============
-*Sydney*      PRD           10.92.0.0     /18           16378
-------------- ------------- ------------- ------------- -------------
-              DEV           10.92.64.0    /18           16378
-------------- ------------- ------------- ------------- -------------
-              SHARE         10.92.128.0   /18           16378
-------------- ------------- ------------- ------------- -------------
-              SecOps        10.92.192.0   /18           16378
-============= ============= ============= ============= =============
++-------------+-------------+-------------+-------------+-------------+
+|Region       |VPC          |Network      |CIDR Mask    |Usable IP's  |
++=============+=============+=============+=============+=============+
+|*Sydney*     |PRD          |10.92.0.0    |/18          |16378        |
+|             +-------------+-------------+-------------+-------------+
+|             |DEV          |10.92.64.0   |/18          |16378        |
+|             +-------------+-------------+-------------+-------------+
+|             |SHARE        |10.92.128.0  |/18          |16378        |
+|             +-------------+-------------+-------------+-------------+
+|             |SecOps       |10.92.192.0  |/18          |16378        |
++-------------+-------------+-------------+-------------+-------------+
 
 
 Subnets
@@ -118,10 +118,12 @@ Security groups are a stateful firewall used to control traffic entering or leav
 groups of instances. Outbound traffic for all EC2 instances will be allowed out without filtering,
 however for Inbound traffic connections will be restricted to improve instance security
 
-**MeBeFake Security Group Standards**
+**MeBeFake Security Group Standards:**
+
     * Instances will generally belong to the following security groups:
         - Default security group (per tier) or a workload specific security group
         - Management security group – allows incoming traffic for management/shared services
+        
     * Default security groups are as follows:
         - Private Default security group – allows/filters incoming traffic from the Public
         - Default security group, allows/filters incoming traffic from on-premise networks
