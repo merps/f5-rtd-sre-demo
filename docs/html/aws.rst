@@ -17,8 +17,8 @@ AWS Virtual Private Cloud (VPC) is an isolated virtual network in AWS. This virt
 enables MeBeFake to manage the resources allocation inside the established VPCs including
 implementing a secure access between MeBeFake and AWS data centres.
 
-MeBeFake’s strategy on VPC is to utilise the Multi-VPC approach. This approach enables MeBeFake to set
-isolated boundaries based on core services being provided. This effectively establishes VPC as a
+MeBeFake’s strategy on VPC is to utilise the Multi-VPC approach. This approach enables MeBeFake to 
+set isolated boundaries based on core services being provided. This effectively establishes VPC as a
 foundational platform in the MeBeFake SRE-Managed AWS platform of which workloads will be placed
 into.
 
@@ -53,6 +53,15 @@ private and protected subnets.
 The following table highlights the network allocation for each VPC in-scope for the MeBeFake SRE-
 Managed AWS Platform.
 
+============= ============= ============= ============= =============
+Region        VPC           Network       CIDR Mask     Usable IP's
+============= ============= ============= ============= =============
+*Sydney*      PRD           10.92.0.0     /18           16378
+              DEV           10.92.64.0    /18           16378
+              SHARE         10.92.128.0   /18           16378
+              SecOps        10.92.192.0   /18           16378
+============= ============= ============= ============= =============
+
 
 Subnets
 ==================================================================
@@ -84,6 +93,9 @@ Protected tier  Instances in a Private subnet are accessible to MeBeFake on-prem
                 for EC2 instances with database(s) and can only be accessed by servers in the 
                 Private tier.
 =============   ==================================================
+
+**For detailed Network Subnet definitions please refer to the Network Subnets tab in the *ne1MBF*
+Data spreadsheet.**
 
 
 ACL's
