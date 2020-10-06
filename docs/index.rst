@@ -28,10 +28,11 @@ https://github.com/merps/f5devops/tree/f5-sre-demo/terraform/f5-sre-demo
    :caption: Contents:
    :glob:
 
-   html/intro
-   html/about
-   html/customer
-   html/solution
+   html/intro.rst
+   html/about.rst
+   html/customer.rst
+   html/solution.rst
+   html/aws.rst
    onprem/*
    aws/*
    images/* 
