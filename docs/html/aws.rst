@@ -27,9 +27,10 @@ The VPC structure is outlined as follows:
 +---------------+----------------------------------------------------+---------------+
 |VPC Name       |Description                                         |TransitGateway |
 +               +                                                    +Interconnect   +
+|               |                                                    |               |
 +===============+====================================================+===============+
 |Production     |A VPC containing the Visy production and UAT        |Yes            |
-+ *(PRD)*       +environments                                        +               +
++**(PRD)**      +environments                                        +               +
 +---------------+----------------------------------------------------+---------------+
 |Development    |A VPC containing MeBeFake's development and test    |Yes            |
 +               +                                                    +               +
