@@ -26,20 +26,27 @@ The VPC structure is outlined as follows:
 
 +---------------+----------------------------------------------------+---------------+
 |VPC Name       |Description                                         |TransitGateway |
++               +                                                    +               +
 |               |                                                    |Interconnect   |
 +===============+====================================================+===============+
 |Production     |A VPC containing the Visy production and UAT        |Yes            |
++               +                                                    +               +
 |(PRD)          |environments                                        |               |
 +---------------+----------------------------------------------------+---------------+
 |Development    |A VPC containing MeBeFake's development and test    |Yes            |
++               +                                                    +               +
 |(DEV)          |environments                                        |               |
 +---------------+----------------------------------------------------+---------------+
 |Shared Services|A VPC containing MeBeFake’s SRE shared services     |Yes            |
++               +                                                    +               +
 |(SHARE)        |that hosts MeBeFake’s CI/CD framework and other     |               |
++               +                                                    +               +
 |               |services such as ActiveDirectory                    |               |
 +---------------+----------------------------------------------------+---------------+
 |Security       |A VPC that is used for SRE Management and Audit     |No             |
++               +                                                    +               +
 |Operations     |Operational Services. This VPC also provides        |               |
++               +                                                    +               +
 |(SecOps)       |centralised management services.                    |               |
 +---------------+----------------------------------------------------+---------------+
 
@@ -82,18 +89,27 @@ protected as follows:
 |Tier           |Description                                                                    |
 +===============+===============================================================================+
 |Public tier    |The Public tier will include Public subnets. This subnet type is targeted for  |
++               +                                                                               +
 |               |instances that support inbound connections from the internet through an AWS    |
++               +                                                                               +
 |               |Internet Gateway (for example, Web Application Firewall (WAF) servers).        | 
-|               |Public subnets have been provisioned in anticipation that internet facing      | 
++               +                                                                               +
+|               |Public subnets have been provisioned in anticipation that internet facing      |
++               +                                                                               +
 |               |workloads will be deployed to these subnets in the future                      |
 +---------------+-------------------------------------------------------------------------------+
 |Private tier   |The Private tier will include Private subnets. This subnet type is targeted for|
-|               |internal web servers and application servers that have private IP addresses.   |  
++               +                                                                               +
+|               |internal web servers and application servers that have private IP addresses.   |
++               +                                                                               +
 |               |Instances in a Private subnet will not support inbound internet connections.   |
 +---------------+-------------------------------------------------------------------------------+
 |Protected tier |Instances in a Private subnet are accessible to MeBeFake on-premise networks.  |
++               +                                                                               +
 |               |The Protected tier will include Protected subnets. This subnet type is         | 
-|               |designated for EC2 instances with database(s) and can only be accessed by      | 
++               +                                                                               +
+|               |designated for EC2 instances with database(s) and can only be accessed by      |
++               +                                                                               +
 |               |servers in the Private tier.                                                   |
 +---------------+-------------------------------------------------------------------------------+
 
