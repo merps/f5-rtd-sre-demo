@@ -7,6 +7,7 @@ sections:
 .. toctree::
    :titlesonly:
    :maxdepth: 2
+   :caption: Sections:
    :glob:
 
    aws
