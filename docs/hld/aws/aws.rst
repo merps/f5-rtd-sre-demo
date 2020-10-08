@@ -5,16 +5,15 @@ This section of the *ne1MBF* MeBeFake's AWS deployment and is broken down into t
 sections:
 
 .. toctree::
-   :maxdepth: 4
-   :caption: Contents:
+   :maxdepth: 2
    :glob: 
 
-   html/aws/aws.rst
-   html/aws/overview.rst
-   html/aws/vpcs.rst
-   html/aws/subnets.rst
-   html/aws/acl.rst
-   html/aws/sg.rst
-   onprem/*
+   hld/aws/aws
+   hld/aws/overview
+   hld/aws/vpcs
+   hld/aws/subnets
+   hld/aws/acl
+   hld/aws/sg
+   hld/onprem/*
    images/* 
    examples/*
