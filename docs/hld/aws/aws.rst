@@ -5,8 +5,9 @@ This section of the *ne1MBF* MeBeFake's AWS deployment and is broken down into t
 sections:
 
 .. toctree::
+   :titlesonly:
    :maxdepth: 2
-   :glob: 
+   :glob:
 
    hld/aws/aws
    hld/aws/overview
@@ -14,6 +15,3 @@ sections:
    hld/aws/subnets
    hld/aws/acl
    hld/aws/sg
-   hld/onprem/*
-   images/* 
-   examples/*
