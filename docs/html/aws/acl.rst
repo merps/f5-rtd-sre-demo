@@ -1,20 +1,8 @@
-AWS Environment
-------------------------------------------------------------------
+ACL's
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This section of the *ne1MBF* MeBeFake's AWS deployment and is broken down into the following
-sections:
-
-.. toctree::
-   :maxdepth: 4
-   :caption: Contents:
-   :glob: 
-
-   html/aws/aws.rst
-   html/aws/overview.rst
-   html/aws/vpcs.rst
-   html/aws/subnets.rst
-   html/aws/acl.rst
-   html/aws/sg.rst
-   onprem/*
-   images/* 
-   examples/*
+Network access control lists (ACL), are an optional layer of security within the VPC layer. They are
+stateless (return traffic must be allowed by rules) firewalls for controlling traffic entering and 
+leaving the subnets. Security Groups provide much better security controls at a more granular level 
+with better debug capabilities than Network ACLs and therefore ACLs will not be used beyond the
+default allow settings.
