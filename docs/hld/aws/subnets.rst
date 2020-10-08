@@ -1,5 +1,5 @@
 Subnets
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------------------------
 
 The following section defines the overall subnets placement for MeBeFake’s SRE Managed AWS cloud
 platform. Subnets design is key to MeBeFake AWS implementation as it sets a foundation for MeBeFake’s

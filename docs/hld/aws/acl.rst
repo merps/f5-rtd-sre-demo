@@ -1,5 +1,5 @@
 ACL's
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------------------------
 
 Network access control lists (ACL), are an optional layer of security within the VPC layer. They are
 stateless (return traffic must be allowed by rules) firewalls for controlling traffic entering and 

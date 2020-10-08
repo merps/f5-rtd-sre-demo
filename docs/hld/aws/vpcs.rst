@@ -1,5 +1,5 @@
 VPCs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------------------------
 
 AWS Virtual Private Cloud (VPC) is an isolated virtual network in AWS. This virtual network
 enables MeBeFake to manage the resources allocation inside the established VPCs including

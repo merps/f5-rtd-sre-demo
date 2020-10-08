@@ -1,5 +1,5 @@
 AWS Environment
-------------------------------------------------------------------
+==================================================================
 
 This section of the *ne1MBF* MeBeFake's AWS deployment and is broken down into the following
 sections:
