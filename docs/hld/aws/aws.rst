@@ -9,9 +9,9 @@ sections:
    :maxdepth: 2
    :glob:
 
-   hld/aws/aws
-   hld/aws/overview
-   hld/aws/vpcs
-   hld/aws/subnets
-   hld/aws/acl
-   hld/aws/sg
+   aws
+   overview
+   vpcs
+   subnets
+   acl
+   sg
