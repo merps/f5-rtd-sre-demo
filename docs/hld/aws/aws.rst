@@ -8,9 +8,7 @@ sections:
    :titlesonly:
    :maxdepth: 2
    :caption: Sections:
-   :glob:
 
-   aws
    overview
    vpcs
    subnets

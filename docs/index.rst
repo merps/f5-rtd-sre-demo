@@ -3,6 +3,7 @@ Site Reliability Engineering (SRE)
 
 .. toctree::
    :maxdepth: 4
+   :name: mastertoc
    :caption: Contents:
    :glob:
 
