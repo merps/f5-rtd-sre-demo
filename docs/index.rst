@@ -10,7 +10,7 @@ Site Reliability Engineering (SRE)
    hld/about
    hld/customer
    hld/solution
-   hld/aws/*
-   onprem/*
+   hld/aws/aws
+   hld/onprem/onprem
    images/* 
    examples/*
